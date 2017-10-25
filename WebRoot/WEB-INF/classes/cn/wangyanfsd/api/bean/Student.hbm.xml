@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.wangyanfsd.api.bean">
+	<class name="Student" table="tb_student">
+		<id name="studentId" column="studentId" type="java.lang.Integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" column="userName" type="java.lang.String" length="20" not-null="true" unique="true" />
+		<property name="passWord" column="passWord" type="java.lang.String" length="32" not-null="true" />
+		<many-to-one name="classroom" column="classId" class="Classroom" not-null="true" />
+	</class>
+</hibernate-mapping>
