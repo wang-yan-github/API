@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.wangyanfsd.api.bean">
+	<class name="Classroom" table="tb_classroom">
+		<id name="classId" column="classId" type="java.lang.Integer">
+			
+			<!-- Oracle
+			<generator class="sequence">
+				<param name="sequence">SEQ_CLASSROOM_ID</param>
+			</generator>
+			 -->
+			<generator class="native"></generator>  
+		</id>
+		<property name="className" column="className" type="java.lang.String" length="20" not-null="true" unique="true" />
+	</class>
+</hibernate-mapping>

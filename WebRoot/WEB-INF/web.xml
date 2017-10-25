@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+  <servlet>
+    <servlet-name>StudentAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.StudentAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentAction</servlet-name>
+    <url-pattern>/studentAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>jhptAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.JTPTAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jhptAction</servlet-name>
+    <url-pattern>/jhptAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GxzdCwgkAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.GxzdCwgkAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GxzdCwgkAction</servlet-name>
+    <url-pattern>/GxzdCwgkAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GxzdSsfaAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.GxzdSsfaAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GxzdSsfaAction</servlet-name>
+    <url-pattern>/GxzdSsfaAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GxzdZfgsAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.GxzdZfgsAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GxzdZfgsAction</servlet-name>
+    <url-pattern>/GxzdZfgsAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ZtzdDfhscAction</servlet-name>
+    <servlet-class>cn.wangyanfsd.api.web.action.ZtzdDfhscAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ZtzdDfhscAction</servlet-name>
+    <url-pattern>/ZtzdDfhscAction</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
