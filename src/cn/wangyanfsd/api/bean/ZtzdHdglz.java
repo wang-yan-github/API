@@ -1,41 +1,65 @@
 package cn.wangyanfsd.api.bean;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class ZtzdHdglz implements Serializable {
-	private static final long serialVersionUID = 5163510089759416284L;
-	private Integer Id;
-	private String Name;
-	private String Content;
-	private String Date;
 	
+	private static final long serialVersionUID = -4563400633034921832L;
+	
+	private Integer id;
+	private String title;
+	private String content;
+	private String date;
+	private String Person;
+	private String department; // 科室
+	private String quality; // 性质
+	private String people; // 人数
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Integer id) {
-		Id = id;
+		this.id = id;
 	}
-	public String getName() {
-		return Name;
+	public String getTitle() {
+		return title;
 	}
-	public void setName(String name) {
-		Name = name;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getContent() {
-		return Content;
+		return content;
 	}
 	public void setContent(String content) {
-		Content = content;
+		this.content = content;
 	}
 	public String getDate() {
-		return Date;
+		return date;
 	}
 	public void setDate(String date) {
-		Date = date;
+		this.date = date;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public String getPerson() {
+		return Person;
 	}
-	
+	public void setPerson(String person) {
+		Person = person;
+	}
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	public String getQuality() {
+		return quality;
+	}
+	public void setQuality(String quality) {
+		this.quality = quality;
+	}
+	public String getPeople() {
+		return people;
+	}
+	public void setPeople(String people) {
+		this.people = people;
+	}
 }

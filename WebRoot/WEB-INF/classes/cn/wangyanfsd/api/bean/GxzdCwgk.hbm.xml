@@ -7,8 +7,9 @@
 		<id name="Id" column="Id" type="java.lang.Integer">
 			<generator class="native"></generator>  
 		</id>
-		<property name="Name" column="Name" type="java.lang.String" length="20" not-null="true" unique="true" />
-		<property name="Content" column="Content" type="text" />
-		<property name="Date" column="Date" type="java.lang.String" length="20" not-null="true" unique="true" />
+		<property name="title" column="title" type="java.lang.String" length="20"/>
+		<property name="content" column="content" type="text" />
+		<property name="date" column="date" type="java.lang.String" length="20"/>
+		<property name="person" column="person" type="java.lang.String" length="20"/>
 	</class>
 </hibernate-mapping>

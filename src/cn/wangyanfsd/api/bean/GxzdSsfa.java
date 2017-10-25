@@ -3,23 +3,26 @@ package cn.wangyanfsd.api.bean;
 import java.io.Serializable;
 
 public class GxzdSsfa implements Serializable {
-	private static final long serialVersionUID = 5163510089759416284L;
-	private Integer Id;
-	private String Name;
+	
+	private static final long serialVersionUID = 7024643350731557441L;
+	
+	private Integer id;
+	private String title;
 	private String Content;
-	private String Date;
+	private String date;
+	private String person;
 	
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Integer id) {
-		Id = id;
+		this.id = id;
 	}
-	public String getName() {
-		return Name;
+	public String getTitle() {
+		return title;
 	}
-	public void setName(String name) {
-		Name = name;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getContent() {
 		return Content;
@@ -28,13 +31,15 @@ public class GxzdSsfa implements Serializable {
 		Content = content;
 	}
 	public String getDate() {
-		return Date;
+		return date;
 	}
 	public void setDate(String date) {
-		Date = date;
+		this.date = date;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public String getPerson() {
+		return person;
 	}
-	
+	public void setPerson(String person) {
+		this.person = person;
+	}
 }

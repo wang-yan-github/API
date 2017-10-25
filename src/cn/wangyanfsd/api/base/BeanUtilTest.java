@@ -1,13 +1,9 @@
 package cn.wangyanfsd.api.base;
 
-import cn.wangyanfsd.api.bean.ZtzdDfhsc;
-import cn.wangyanfsd.api.bean.ZtzdGkglc;
-import cn.wangyanfsd.api.bean.ZtzdGlglz;
-import cn.wangyanfsd.api.bean.ZtzdHdglz;
-import cn.wangyanfsd.api.bean.ZtzdJtgczl;
-import cn.wangyanfsd.api.bean.ZtzdJtysgls;
-import cn.wangyanfsd.api.bean.ZtzdJtysj;
-import cn.wangyanfsd.api.bean.ZtzdXzjt;
+import cn.wangyanfsd.api.bean.FangWen;
+import cn.wangyanfsd.api.bean.GuanJianZi;
+import cn.wangyanfsd.api.bean.LiuLiang;
+import cn.wangyanfsd.api.bean.User;
 
 /**
  * @author wangy(wangy@cnliren.com)
@@ -18,16 +14,25 @@ public class BeanUtilTest {
 	public static void main(String[] args) throws Exception{
 		BeanUtilTest beanUtilTest = new BeanUtilTest();
 		BeanUtils beanUtils = new BeanUtils();
-		/** 二、主体职责
-			1、邳州市交通运输局:
-			2、邳州市交通运输管理所:
-			3、邳州市公路管理站:
-			4、邳州市乡镇交通运输综合管理所:
-			5、邳州市地方海事处:
-			6、邳州市航道管理站:
-			7、邳州市港口管理处:
-			8、邳州市交通工程质量监督站:
-		 */
+		
+		/*beanUtilTest.beanTool(beanUtils, BslcCflc.class);
+		beanUtilTest.beanTool(beanUtils, BslcJclc.class);
+		beanUtilTest.beanTool(beanUtils, BslcXklc.class);
+		beanUtilTest.beanTool(beanUtils, BslcZzlc.class);
+		
+		beanUtilTest.beanTool(beanUtils, GxzdCwgk.class);
+		beanUtilTest.beanTool(beanUtils, GxzdSsfa.class);
+		beanUtilTest.beanTool(beanUtils, GxzdZfgs.class);
+		
+		beanUtilTest.beanTool(beanUtils, ZtyjDfhsc.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjGkglc.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjGlglz.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjHdglz.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjJtgczl.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjJtysgls.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjJtysj.class);
+		beanUtilTest.beanTool(beanUtils, ZtyjXzjt.class);
+		
 		beanUtilTest.beanTool(beanUtils, ZtzdDfhsc.class);
 		beanUtilTest.beanTool(beanUtils, ZtzdGkglc.class);
 		beanUtilTest.beanTool(beanUtils, ZtzdGlglz.class);
@@ -36,38 +41,28 @@ public class BeanUtilTest {
 		beanUtilTest.beanTool(beanUtils, ZtzdJtysgls.class);
 		beanUtilTest.beanTool(beanUtils, ZtzdJtysj.class);
 		beanUtilTest.beanTool(beanUtils, ZtzdXzjt.class);
-
-		/** 三、执法依据
-			1、邳州市交通运输局:
-			2、邳州市交通运输管理所:
-			3、邳州市公路管理站:
-			4、邳州市乡镇交通运输综合管理所:
-			5、邳州市地方海事处:
-			6、邳州市航道管理站:
-			7、邳州市港口管理处:
-			8、邳州市交通工程质量监督站:
-		*/
 		
-		/**四、办事流程
-			1、行政许可流程；
-			2、行政处罚流程；
-			3、行政强制流程；
-			4、行政检查流程；
-		 */
+		beanUtilTest.beanTool(beanUtils, ZfqxJcsx.class);
+		beanUtilTest.beanTool(beanUtils, ZfqxQlsx.class);
+		beanUtilTest.beanTool(beanUtils, ZfqxZrsx.class);
 		
-		/** 五、执法权限
-			1、行政权力事项；
-			2、行政责任事项；
-			3、行政检查事项
-		 */
+		beanUtilTest.beanTool(beanUtils, Zfjj.class);
 		
-		/** 六、执法救济*/
+		beanUtilTest.beanTool(beanUtils, ZfjgCfjg.class);
+		beanUtilTest.beanTool(beanUtils, ZfjgJcjg.class);
+		beanUtilTest.beanTool(beanUtils, ZfjgXkjg.class);
 		
-		/** 七、执法结果
-		 	1、许可结果；
-			2、处罚结果；
-			3、检查结果。
-		 */
+		beanUtilTest.beanTool(beanUtils, FjJtdt.class);
+		beanUtilTest.beanTool(beanUtils, FjLbt.class);
+		beanUtilTest.beanTool(beanUtils, FjRmjx.class);
+		beanUtilTest.beanTool(beanUtils, FjYqlj.class);
+		beanUtilTest.beanTool(beanUtils, FjQdym.class);
+		
+		beanUtilTest.beanTool(beanUtils, User.class);*/
+		
+		beanUtilTest.beanTool(beanUtils, LiuLiang.class);
+		beanUtilTest.beanTool(beanUtils, GuanJianZi.class);
+		beanUtilTest.beanTool(beanUtils, FangWen.class);
 	}
 	
 	/**
@@ -82,5 +77,6 @@ public class BeanUtilTest {
 		beanUtils.createBeanDaoImpl(c);
 		beanUtils.createBeanService(c);
 		beanUtils.createBeanServiceImpl(c);
+		beanUtils.createAction(c);
 	}
 }

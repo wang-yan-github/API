@@ -13,6 +13,7 @@ public interface BaseDao<T> {
 	
 	public T find(Serializable id);
 	public T find(String where,Object... params);
+	public T find(String where, LinkedHashMap<String, String> orderBy, Object... params);
 	
 	public List<T> list();
 	public List<T> list(String where,Object... params);

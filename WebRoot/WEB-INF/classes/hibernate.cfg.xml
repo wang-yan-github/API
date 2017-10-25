@@ -13,11 +13,23 @@
 		<property name="current_session_context_class">thread</property>
 		 -->
 		 
+	 	<!-- <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>  
+        	<property name="c3p0.acquire_increment">1</property>  
+        	<property name="c3p0.idle_test_period">100</property>  
+        	<property name="c3p0.max_size">5</property>  
+        	<property name="c3p0.max_statements">0</property>  
+        	<property name="c3p0.min_size">2</property>  
+        	<property name="c3p0.timeout">90</property>  
+ 
+        	<property name="c3p0.idleConnectionTestPeriod ">18000</property>              
+        	<property name="c3p0.maxIdleTime">25000</property>           
+     	<property name="c3p0.testConnectionOnCheckout">true</property>   -->
+		 
 		<!-- 1.数据库连接配置 Mysql -->  
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property><!-- MySQL驱动类 -->
-        <property name="hibernate.connection.url">jdbc:mysql://60.205.186.12:3306/pzjt</property><!-- MySQL连接端口号（3306）与数据库（root） -->
-        <property name="hibernate.connection.username">pzjt</property><!-- MySQL用户名    -->
-        <property name="connection.password">YmcG2A5LJZ</property><!-- MySQL用户密码 -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pzjt</property><!-- MySQL连接端口号（3306）与数据库（root） -->
+        <property name="hibernate.connection.username">root</property><!-- MySQL用户名    -->
+        <property name="connection.password">uAiqwVwjJ8-i</property><!-- MySQL用户密码 -->
         <!-- dialect翻译为方言 Hibernate根据你选择的“方言”，针对每种数据库，作调整，如生成不同的SQL语句等
         DB2	org.hibernate.dialect.DB2Dialect
 		DB2 AS/400	org.hibernate.dialect.DB2400Dialect
@@ -43,9 +55,11 @@
 		Firebird	
 		org.hibernate.dialect.FirebirdDialect -->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="current_session_context_class">thread</property><!-- 返回当前的Session -->
+
 		
-		 <!-- 2.其他相关配置 -->  
+		 <!-- 其他相关配置 -->  
+		<property name="current_session_context_class">thread</property><!-- 返回当前的Session -->
+		<property name="connection.autocommit">false</property>
 		<property name="show_sql">true</property><!-- 显示hibernate对数据库操作语句 -->
 		<property name="format_sql">true</property><!-- 格式化Hibernate的SQL输出语句 -->
 		<property name="use_sql_comments">true</property>
@@ -69,5 +83,49 @@ update：
 		<mapping resource="cn/wangyanfsd/api/bean/GxzdSsfa.hbm.xml" />
 		<mapping resource="cn/wangyanfsd/api/bean/GxzdZfgs.hbm.xml" />
 		
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdDfhsc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdGkglc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdGlglz.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdHdglz.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdJtgczl.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdJtysgls.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdJtysj.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtzdXzjt.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjDfhsc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjGkglc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjGlglz.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjHdglz.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjJtgczl.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjJtysgls.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjJtysj.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZtyjXzjt.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/BslcCflc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/BslcJclc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/BslcXklc.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/BslcZzlc.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/ZfqxJcsx.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZfqxQlsx.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZfqxZrsx.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/Zfjj.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/ZfjgCfjg.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZfjgJcjg.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/ZfjgXkjg.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/FjJtdt.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/FjLbt.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/FjRmjx.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/FjYqlj.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/FjQdym.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/User.hbm.xml" />
+		
+		<mapping resource="cn/wangyanfsd/api/bean/FangWen.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/LiuLiang.hbm.xml" />
+		<mapping resource="cn/wangyanfsd/api/bean/GuanJianZi.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

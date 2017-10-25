@@ -1,7 +1,9 @@
 package cn.wangyanfsd.api.dao;
 
-import cn.wangyanfsd.api.bean.GxzdSsfa;
-
-public interface GxzdSsfaDao extends BaseDao<GxzdSsfa> {
+/**
+ * @author wangy(wangy@cnliren.com)
+ * @date 2017-10-30
+ */
+public interface GxzdSsfaDao extends cn.wangyanfsd.api.dao.BaseDao <cn.wangyanfsd.api.bean.GxzdSsfa> {
 
 }
